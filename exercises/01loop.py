@@ -16,8 +16,10 @@
 
 
 def p_times(statement, number):
-    for i in range(number):
+    for i in range(int(number)):
         print(statement)
 
-p_times('Hello there', 3)
+some_number  = input('give me a number')
+
+p_times('Hello there', some_number)
 
