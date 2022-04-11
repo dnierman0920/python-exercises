@@ -6,9 +6,21 @@
 #
 # for letter in "alpha":
 #   print(letter)
+def letter_count(letter, string):
+    dd = {} # create an empty dict
+    for char in string: # iterate through each char in the string
+        if char in dd: # if the same char has already been iterated over add 1 to the count
+            dd[char] += 1
+        else: # if the char has NOT been iterated over, add it to the dict and give it the value of 1
+            dd[char] = 1
+    return dd
+
+print(letter_count('d', 'the dog days are over'))
+
 #
 # Create a dictionary with `dd = {}`. Assign values with `dd["foo"] = 1`.
 # Check to see if a dictionary has a key using the `in` operator.
+
 #
 #
 # Careful. Python requires that you insert a key into a dictionary
