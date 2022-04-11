@@ -10,3 +10,11 @@
 # multiply_by([1, 2, 3], 5)
 #
 # > [5, 10, 15]
+
+
+def multiply_by(some_list, multiplier):
+    for i in range(len(some_list)):
+        some_list[i] *= multiplier
+    return some_list
+
+print( multiply_by([1, 2, 3], 5))
